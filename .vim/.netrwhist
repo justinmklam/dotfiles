@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/jlam/.ssh'
+let g:netrw_dirhist_2='/etc/apt/sources.list.d'
+let g:netrw_dirhist_3='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control'
+let g:netrw_dirhist_4='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/webapp'
+let g:netrw_dirhist_5='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/webapp/api'
+let g:netrw_dirhist_6='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/awesem'
+let g:netrw_dirhist_7='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/awesem/api'
+let g:netrw_dirhist_8='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/webapp'
