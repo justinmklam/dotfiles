@@ -90,6 +90,13 @@ endif
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
 let g:ctrlp_clear_cache_on_exit = 0
 
+" Make file explorer a bit more usable
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
+" Automatically trim whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
 " Automatic installation for vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -100,5 +107,5 @@ endif
 " Add plugins here
 call plug#begin()
 
-
 call plug#end()
+
