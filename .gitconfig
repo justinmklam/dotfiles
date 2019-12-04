@@ -1,0 +1,10 @@
+[user]
+	email = justin@mistywest.com
+	name = Justin Lam
+[core]
+	editor = vim
+	compression = 1
+[credential]
+	helper = store
+[push]
+	default = current
