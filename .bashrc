@@ -133,3 +133,8 @@ fi
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 #alias sudo='sudo env PATH=/home/jlam/.nvm/versions/node/v12.12.0/bin:/home/jlam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jlam/.nvm/versions/node/v12.12.0/bin'
 #
+
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source $HOME/.local/bin/virtualenvwrapper.sh
