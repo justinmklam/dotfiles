@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control'
-let g:netrw_dirhist_2='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/awesem'
-let g:netrw_dirhist_3='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/awesem/qtgui'
-let g:netrw_dirhist_4='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control'
-let g:netrw_dirhist_5='/home/jlam/Documents/ua02-ubc-awesem/ua02-awesem-control/awesem/utils'
