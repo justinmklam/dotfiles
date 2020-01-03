@@ -8,3 +8,11 @@
 	helper = store
 [push]
 	default = current
+[alias]
+	cm = commit -m
+	pf = push --force-with-lease
+	st = status
+	amend = commit --amend
+	hist = log --all --decorate --oneline --graph
+	undo = reset HEAD^1
+	unstage = reset HEAD --
