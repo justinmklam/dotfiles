@@ -99,10 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias zshreset="source ~/.zshrc"
+alias zsh-config="vim ~/.zshrc"
+alias zsh-source="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=/home/jlam/.cfg --work-tree=/home/jlam'
-alias reset-monitors=' xrandr --output eDP-1 --auto --pos 0x1000 --mode 2048x1152 --output DP-1-2 --pos 2048x0'
+alias monitor-reset=' xrandr --output eDP-1 --auto --pos 0x1000 --mode 2048x1152 --output DP-1-2 --pos 2048x0'
 
 # virtualenvwrapper
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
