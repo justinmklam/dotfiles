@@ -33,7 +33,11 @@ echo "alias config='/usr/bin/git --git-dir=$config_dir --work-tree=$HOME'" >> $H
 Adding new files from anywhere in your `$HOME` directory:
 
 ```bash
+# Add a specific file
 config add .bash_aliases
+# Alternatively, to add the recently changed (tracked) file(s)
+config add -u
+
 config commit -m "Add bash_aliases"
 config push
 ```
