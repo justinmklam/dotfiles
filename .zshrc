@@ -97,15 +97,19 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
 alias zsh-config="vim ~/.zshrc"
 alias zsh-source="source ~/.zshrc"
 alias config='/usr/bin/git --git-dir=/home/jlam/.cfg --work-tree=/home/jlam'
-alias monitor-reset=' xrandr --output eDP-1 --auto --pos 0x1000 --mode 2048x1152 --output DP-1-2 --pos 2048x0'
+alias monitor-reset='xrandr --output eDP-1 --auto --pos 0x1000 --mode 2048x1152 --output DP-1-2 --pos 2049x0'
+alias monitor-reset-home='xrandr --output eDP-1 --auto --pos 0x1080 --mode 2048x1152 --output DP-1 --pos 55x0 --primary'
+alias ssh-agario='ssh -i "~/.ssh/justin.pem" ubuntu@ec2-54-190-176-75.us-west-2.compute.amazonaws.com'
+alias agario-server-start="aws ec2 start-instances --instance-ids i-02b303eb704dc92e4"
+alias agario-server-stop="aws ec2 stop-instances --instance-ids i-02b303eb704dc92e4"
 
 # virtualenvwrapper
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source $HOME/.local/bin/virtualenvwrapper.sh
+
+source /home/jlam/.config/broot/launcher/bash/br
