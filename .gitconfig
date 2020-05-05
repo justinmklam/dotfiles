@@ -4,8 +4,16 @@
 [core]
 	editor = vim
 	compression = 1
+    pager = delta
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [credential]
-	helper = store
 [push]
 	default = current
 [alias]
@@ -16,3 +24,5 @@
 	hist = log --all --decorate --oneline --graph
 	undo = reset HEAD^1
 	unstage = reset HEAD --
+[difftool]
+	prompt = false
