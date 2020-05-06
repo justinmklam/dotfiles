@@ -94,6 +94,15 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 " Use system clipboard (requires `apt install vim-gnome`)
 set clipboard=unnamedplus
 
+"keep cursor in the middle all the time
+nnoremap k kzz
+nnoremap j jzz
+nnoremap p pzz
+nnoremap P Pzz
+nnoremap G Gzz
+nnoremap x xzz
+inoremap <ESC> <ESC>zz
+
 " ctrlp finder
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Performance improvements
