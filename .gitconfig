@@ -19,8 +19,10 @@
 [alias]
 	cm = commit -m
 	pf = push --force-with-lease
-	st = status
-	amend = commit --amend
+	s = status
+	ca = commit --amend
+    d = diff
+    ds = diff --staged
 	hist = log --all --decorate --oneline --graph
 	undo = reset HEAD^1
 	unstage = reset HEAD --
