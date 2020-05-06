@@ -91,6 +91,9 @@ inoremap <C-k> <ESC>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
+" Use system clipboard (requires `apt install vim-gnome`)
+set clipboard=unnamedplus
+
 " ctrlp finder
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Performance improvements
