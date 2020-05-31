@@ -103,6 +103,10 @@ nnoremap G Gzz
 nnoremap x xzz
 inoremap <ESC> <ESC>zz
 
+" For lightline plugin
+set laststatus=2
+set noshowmode
+
 " ctrlp finder
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Performance improvements
@@ -129,6 +133,6 @@ endif
 
 " Add plugins here
 call plug#begin()
-
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
