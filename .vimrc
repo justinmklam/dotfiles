@@ -134,6 +134,7 @@ Plug 'srcery-colors/srcery-vim'
 Plug 'psliwka/vim-smoothie'
 Plug 'gruvbox-community/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 let g:srcery_italic = 1
@@ -208,7 +209,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <silent> gh :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
