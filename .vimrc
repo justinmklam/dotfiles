@@ -104,7 +104,6 @@ if (has("termguicolors"))
 endif
 
 " ctrlp finder
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Performance improvements
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 if executable('ag')
@@ -134,6 +133,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'srcery-colors/srcery-vim'
 Plug 'psliwka/vim-smoothie'
 Plug 'gruvbox-community/gruvbox'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 let g:srcery_italic = 1
