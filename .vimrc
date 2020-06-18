@@ -92,15 +92,8 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Use system clipboard (requires `apt install vim-gnome`)
-set clipboard=unnamedplus
-
-"keep cursor in the middle all the time
-nnoremap k kzz
-nnoremap j jzz
-nnoremap p pzz
-nnoremap P Pzz
-nnoremap x xzz
-inoremap <ESC> <ESC>zz
+" Note: This slows down yank/delete/etc. operations since it has to communicate with the system clipboard. Disable to make things faster; yank to system clipboard with "+y
+"set clipboard=unnamedplus
 
 " For lightline plugin
 set laststatus=2
@@ -140,14 +133,14 @@ Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'srcery-colors/srcery-vim'
 Plug 'psliwka/vim-smoothie'
-Plug 'jaxbot/semantic-highlight.vim'
 Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
 let g:srcery_italic = 1
 let g:srcery_bold = 1
-colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
+set background=dark
+colorscheme gruvbox
 let g:lightline = {'colorscheme': 'gruvbox'}
 
 
@@ -164,7 +157,7 @@ set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+set updatetime=30
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
