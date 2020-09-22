@@ -131,7 +131,7 @@ call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'srcery-colors/srcery-vim'
-Plug 'psliwka/vim-smoothie'
+"Plug 'psliwka/vim-smoothie'
 Plug 'gruvbox-community/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
