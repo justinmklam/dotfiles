@@ -105,6 +105,7 @@ alias monitor-reset-home='xrandr --output eDP-1 --auto --pos 0x1080 --mode 2048x
 alias ssh-agario='ssh -i "~/.ssh/justin.pem" ubuntu@ec2-54-190-176-75.us-west-2.compute.amazonaws.com'
 alias agario-server-start="aws ec2 start-instances --instance-ids i-02b303eb704dc92e4"
 alias agario-server-stop="aws ec2 stop-instances --instance-ids i-02b303eb704dc92e4"
+alias rg=". ranger"
 
 # virtualenvwrapper
 VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
