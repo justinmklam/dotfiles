@@ -9,6 +9,8 @@
     tool = vscode
 [mergetool "vscode"]
     cmd = code --wait $MERGED
+[interactive]
+    diffFilter = delta --color-only
 [diff]
     tool = vscode
 [difftool "vscode"]
