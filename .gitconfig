@@ -20,10 +20,15 @@
 [push]
 	default = current
 [alias]
+    a = add
+    au = add -u
+    ap = add -p
 	cm = commit -m
+    ca = commit --amend
+    co = checkout
+    cob = checkout -b
 	pf = push --force-with-lease
 	s = status
-	ca = commit --amend
     d = diff
     ds = diff --staged
 	hist = log --all --decorate --oneline --graph
